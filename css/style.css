@@ -1,0 +1,131 @@
+body{ padding-top: 60px; font-family: Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;}
+
+td.menu-photo,.menu td.menu-form{ width: 30%;}
+
+td.menu-info{ width: 30%; text-align: center;}
+
+input[type="radio"]{display:none;}
+
+tr{text-align: center;vertical-align: middle;}
+
+td{position:relative;}
+
+.caption-top{caption-side: top;}
+
+.stop td::after{content:'本日終了';position:absolute;top:3px;right:0px;bottom:3px;left:0px;background-color:rgba(0,0,0,0.5);color:white;display: flex;justify-content: center;align-items: center;font-size: 125%;}
+
+img{height:100px;width:150px}
+
+.tabcontainer{z-index:10;background-color: white;width: 100%;height: 60px;position: fixed;top: 56px;}
+
+#myTab{position:fixed}
+
+span,p{color:#555;}
+
+.form-signin {
+width: 100%;
+max-width: 360px;
+padding: 40px;
+margin: auto;
+border-radius: 15px;
+}
+
+main{
+display: block;
+}
+
+  
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 90px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  z-index: 99;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 11.5rem;
+    padding: 0;
+  }
+}
+
+.navbar {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+@media (min-width: 767.98px) {
+  .navbar {
+    top: 0;
+    position: sticky;
+    z-index: 999;
+  }
+}
+
+.sidebar .nav-link {
+  color: #333;
+}
+
+.sidebar .nav-link.active {
+  color: #0d6efd;
+}
+
+/*  */
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#accordion_menu > li {
+  /* border: #ccc 1px solid; */
+  margin-bottom: -1px;
+}
+
+#accordion_menu a[data-toggle="collapse"]{
+  display: block;
+  padding: 10px 10px 10px 17px;
+  text-decoration: none;
+  position: relative;
+}
+#accordion_menu a[data-toggle="collapse"]:hover,li.nav-item a:hover{
+  background: #e7e7e7;
+}
+#accordion_menu a[data-toggle="collapse"]::after{
+  content:"";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: #666 1px solid;
+  border-right: #666 1px solid;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#accordion_menu a[aria-expanded=false]::after{
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition-duration: 0.3s;
+}
+#accordion_menu a[aria-expanded=true]::after{
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition-duration: 0.3s;
+}
+[id^="menu"] li{
+  padding: 1px;
+  margin-left: 30px;
+}
+
+ul.edit-list li{padding: 8px}
+ul.edit-list li:nth-child(2n){background-color:#f8f9fa}
+
+html {
+ overflow-y: scroll;
+}
