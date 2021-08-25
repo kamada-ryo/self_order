@@ -1,4 +1,4 @@
-body{ padding-top: 60px; font-family: Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;}
+body{ padding-top: 0; font-family: Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;}
 
 td.menu-photo,.menu td.menu-form{ width: 30%;}
 
@@ -69,7 +69,7 @@ display: block;
   color: #333;
 }
 
-.sidebar .nav-link.active {
+.sidebar .nav-link.active,.active > span, .active > p {
   color: #0d6efd;
 }
 

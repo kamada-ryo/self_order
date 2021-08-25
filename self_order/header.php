@@ -30,7 +30,7 @@ if(!isset($_SESSION['customer'])){
 
 </head>
 
-<body>
+<body style="padding-top:60px">
 
 
   <div id="toast1" class="toast mx-auto position-fixed fade hide start-50 translate-middle" data-bs-delay="1000" role="alert" aria-live="assertive" aria-atomic="true" style="z-index:2100000000">
@@ -48,7 +48,7 @@ if(!isset($_SESSION['customer'])){
     }
     ?>
     <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light position-fixed">
       <div class="container-fluid">
         <a class="navbar-brand" href="self_order.php">テーブル <?= isset($_SESSION['number']) ? $_SESSION['number'] : '' ; ?></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
